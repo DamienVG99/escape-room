@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -20,7 +20,7 @@ MonoBehaviour:
       incomplete and subject to changes (API, UX, scope). As such, it is not covered
       by regular Unity support. Please direct any questions to the:'
     linkText: Preview Forum
-    url: 'https://forum.unity.com/categories/betas-experimental-features.86/'
+    url: https://forum.unity.com/categories/betas-experimental-features.86/
   - heading: 
     text: 'This template is a good starting point for developers focused on performance
       and VR projects that use a primarily baked lighting solution. This template
@@ -33,7 +33,7 @@ MonoBehaviour:
   - heading: 
     text: 'Visit the Unity XR manual pages for more information about VR: '
     linkText: VR Overview
-    url: 'https://docs.unity3d.com/Manual/VROverview.html'
+    url: https://docs.unity3d.com/Manual/VROverview.html
   - heading: 
     text: 'To read more about the Lightweight Render Pipeline check out the Scriptable
       Render Pipeline wiki here:'
