@@ -1,16 +1,28 @@
-﻿tusing System.Collections;
+﻿using UnityEngine;
+using UnityEngine.UI;
+
+using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class volumeController : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    // Use this for initialization
+    public float defaultVolumeLevel = 0.5f;
+    
+
+    public void volumeDown()
+    {
+        GameObject volumeDisplay = GameObject.Find("volumeDisplay");
+        float currentVolume = volumeDisplay.GetComponent<Slider>().value;
+        currentVolume--;
+        volumeDisplay.GetComponent<Slider>().value = currentVolume;
+    }
+
+    public void volumeUp()
+    {
+        GameObject volumeDisplay = GameObject.Find("volumeDisplay");
+        float currentVolume = volumeDisplay.GetComponent<Slider>().value;
+        currentVolume++;
+        volumeDisplay.GetComponent<Slider>().value = currentVolume;
+    }
 }
