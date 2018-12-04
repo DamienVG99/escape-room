@@ -90,7 +90,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2935,7 +2935,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 326082337}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.71, y: 0, z: 9.31}
+  m_LocalPosition: {x: 0, y: 0, z: 4.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1516412175}
@@ -8823,7 +8823,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh20678
+  m_Name: pb_Mesh-11964
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -11118,7 +11118,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh20944
+  m_Name: pb_Mesh-11956
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -13449,7 +13449,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1164068650}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.97, y: 0.5, z: -5.51}
+  m_LocalPosition: {x: 9.5, y: 0.5, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14389,7 +14389,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh20864
+  m_Name: pb_Mesh-11936
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -14544,7 +14544,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh20908
+  m_Name: pb_Mesh-11978
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -14699,7 +14699,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh21002
+  m_Name: pb_Mesh-11966
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -19387,7 +19387,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh20626
+  m_Name: pb_Mesh-11968
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -21942,7 +21942,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh20810
+  m_Name: pb_Mesh-11934
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
