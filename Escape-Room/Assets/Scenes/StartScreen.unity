@@ -265,12 +265,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 21b21af332f5d1845bd8f060c3284f32, type: 3}
-        m_MethodName: 
+      - m_Target: {fileID: 942016148}
+        m_MethodName: loadOptionScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -874,6 +874,7 @@ GameObject:
   - component: {fileID: 942016146}
   - component: {fileID: 942016145}
   - component: {fileID: 942016144}
+  - component: {fileID: 942016148}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -961,6 +962,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &942016148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 942016143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c25a45baf35dc243a0520de47376327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultVolumeLevel: -3
+  defaultQualitySetting: 3
+  defaultFullscreenToggle: 1
+  mainAudiomixer: {fileID: 24100000, guid: 0cacef1d104d8a242bd54d6b5dd95954, type: 2}
 --- !u!1 &1007729528
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,7 +1056,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1007729528}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.58, y: 0, z: 0}
+  m_LocalPosition: {x: 5.58, y: 0, z: -728}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1326,12 +1342,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 86f7b122dc1220d469cce30d8a687a8e, type: 3}
-        m_MethodName: 
+      - m_Target: {fileID: 942016148}
+        m_MethodName: startMainGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

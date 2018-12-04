@@ -188,4 +188,9 @@ public class settingsMenu : MonoBehaviour {
         resolutionDropdown.RefreshShownValue();
         return currentResolutionIndex;
     }
+
+    public void returnStartScreen()
+    {
+        Application.LoadLevel("StartScreen");
+    }
 }

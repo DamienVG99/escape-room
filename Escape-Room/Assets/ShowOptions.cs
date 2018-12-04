@@ -10,7 +10,7 @@ public class ShowOptions : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        StartButton.onClick.AddListener(LoadNewScene);
+
     }
 
     // Update is called once per frame
@@ -20,7 +20,7 @@ public class ShowOptions : MonoBehaviour {
     }
     void LoadNewScene()
     {
-        SceneManager.LoadScene(LoadScene);
+        SceneManager.LoadScene("optionScreen");
     }
 }
 
