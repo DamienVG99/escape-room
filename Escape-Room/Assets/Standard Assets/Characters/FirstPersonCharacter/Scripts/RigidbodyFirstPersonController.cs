@@ -11,10 +11,17 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [Serializable]
         public class MovementSettings
         {
-            public float ForwardSpeed = 8.0f;   // Speed when walking forward
-            public float BackwardSpeed = 4.0f;  // Speed when walking backwards
-            public float StrafeSpeed = 4.0f;    // Speed when walking sideways
-            public float RunMultiplier = 2.0f;   // Speed when sprinting
+            public float currStamina = 3.0f;                        //Current Stamina
+            public float maxStamina = 3.0f;                         //Maximum Stamina
+            private float staminaRegenTimer = 0.0f;                 //Stamina Regen Timer
+            private const float staminaDecreasePerFrame = 3.0f;     //Stamina Decrease
+            private const float staminaIncreasePerFrame = 1.0f;     //Stamina Increase
+            private const float staminaTimeToRegen = 1.0f;          //Stamina Regen Time
+
+            public float ForwardSpeed = 8.0f;                       // Speed when walking forward
+            public float BackwardSpeed = 4.0f;                      // Speed when walking backwards
+            public float StrafeSpeed = 4.0f;                        // Speed when walking sideways
+            public float RunMultiplier = 2.0f;                      // Speed when sprinting
 	        public KeyCode RunKey = KeyCode.LeftShift;
             public float JumpForce = 30f;
             public AnimationCurve SlopeCurveModifier = new AnimationCurve(new Keyframe(-90.0f, 1.0f), new Keyframe(0.0f, 1.0f), new Keyframe(90.0f, 0.0f));
@@ -44,13 +51,31 @@ namespace UnityStandardAssets.Characters.FirstPerson
 					CurrentTargetSpeed = ForwardSpeed;
 				}
 #if !MOBILE_INPUT
+
 	            if (Input.GetKey(RunKey))
 	            {
-		            CurrentTargetSpeed *= RunMultiplier;
-		            m_Running = true;
+                    if (currStamina <= 0)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        CurrentTargetSpeed *= RunMultiplier;
+		                m_Running = true;
+                        currStamina = Mathf.Clamp(currStamina - (staminaDecreasePerFrame * Time.deltaTime), 0.0f, maxStamina);
+                        staminaRegenTimer = 0.0f;
+                    }
+                    
 	            }
 	            else
 	            {
+                    if(currStamina < maxStamina)
+                    {
+                        if (staminaRegenTimer >= staminaTimeToRegen)
+                            currStamina = Mathf.Clamp(currStamina + (staminaIncreasePerFrame * Time.deltaTime), 0.0f, maxStamina);
+                        else
+                            staminaRegenTimer += Time.deltaTime;
+                    }
 		            m_Running = false;
 	            }
 #endif
